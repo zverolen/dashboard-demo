@@ -1,0 +1,8 @@
+.myTeamContentContainer {
+  padding-block-start: var(--formGap_top);
+  padding-inline: var(--sitePadding_normal);
+
+  h2 {
+    margin-block-end: var(--formHeadingGap_bottom);
+  }
+}

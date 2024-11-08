@@ -1,0 +1,8 @@
+:root {
+  --WCAG_line-height_AAA: 1.5;
+  --WCAG_reading-width: 80ch;
+  --WCAG_letter-spacing: 0.012em;
+  --WCAG_word-gap: 0.016em;
+  --WCAG_min-box-size_AAA: calc(44 / 16 * 1rem);
+  --WCAG_min-box-size_AA: calc(24 / 16 * 1rem);
+}

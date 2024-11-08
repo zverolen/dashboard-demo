@@ -1,0 +1,322 @@
+@layer reset, accessibility, colors, text, layout;
+
+@import url("./styles/reset.css") layer(reset);
+@import url("./styles/accessibility.css") layer(accessibility);
+@import url("./styles/colors.css") layer(colors);
+@import url("./styles/sizes.css") layer(sizes);
+@import url("./styles/text.css") layer(text);
+@import url("./styles/layout.css") layer(layout);
+
+.visually-hidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body, h1, h2, h3, h4 {
+  font-size: var(--fontSize_primary);
+  font-family: var(--font-face_primary);
+  font-weight: var(--font-weight_primary);
+  font-optical-sizing: auto;
+  line-height: var(--line-height_primary);
+
+  color: var(--white);
+}
+
+body {
+  background-color: var(--color_background_primary);
+}
+
+h2 {
+  text-transform: var(--text-transform_caption);
+}
+
+li {
+  list-style: none;
+}
+
+a:hover, a:focus-visible {
+  color: var(--color_accent);
+}
+
+
+dt {
+  color: var(--color_text_secondary);
+}
+
+th, td {
+  padding: 0;
+}
+
+th {
+  font-weight: var(--temp-font-weight_primary);
+  color: var(--temp-color_text_secondary);
+}
+
+legend {
+  padding: 0;
+  margin-block-end: var(--gap_2);
+}
+
+/* button, .button { */
+  /* display: flex;
+  align-items: center;
+
+  min-height: var(--WCAG_min-box-size_AAA);
+  min-width: var(--WCAG_min-box-size_AAA);
+  padding: 0;
+
+  color: var(--color_background_primary);
+  text-decoration: none;
+
+  border: none;
+
+  background-color: transparent; */
+
+  /* span {
+    display: block;
+    width: var(--full-width);
+    padding-block: var(--button__visiblePadding_block);
+    padding-inline: var(--button__visiblePadding_inline);
+
+    background-color: var(--color_text_primary);
+
+    border: var(--borderWidth) solid var(--color_text_primary);
+    border-radius: var(--borderRadius_primary);
+  } */
+/* } */
+
+/* button:is(.primary, .secondary) {
+  span {
+    display: block;
+    width: var(--full-width);
+    padding-block: var(--button__visiblePadding_block);
+    padding-inline: var(--button__visiblePadding_inline);
+
+    background-color: var(--color_text_primary);
+
+    border: var(--borderWidth) solid var(--color_text_primary);
+    border-radius: var(--borderRadius_primary);
+  }
+} */
+
+/* button.secondary span, .button.secondary span {
+  
+  color: var(--color_text_primary);
+
+  background-color: var(--color_background_primary);
+}
+
+button:is(:hover, :focus-visible) span,
+.button:is(:hover, :focus-visible) span {
+  color: var(--color_background_primary);
+
+  background-color: var(--color_accent) !important;
+
+  border-color: var(--color_accent);
+}
+
+button:focus-visible, button:focus,
+.button:focus-visible, .button:focus {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+} */
+
+#root {
+  /* display: grid; */
+  /* grid-template-rows: auto 1fr auto; */
+  grid-template-rows: auto minmax(70vh, auto) auto;
+
+  /* min-height: 100vh; */
+  width: var(--temp-site-width);
+  height: var(--fullPageHeight);
+}
+
+.caption {
+  text-transform: var(--text-transform_caption);
+}
+
+label {
+  display: flex;
+  align-items: center;
+
+  height: var(--fullContainerHeight);
+}
+
+/* select {
+  width: var(--inputText__width);
+  height: var(--inputText__height);
+} */
+
+/* .inputGroup {
+  height: var(--WCAG_min-box-size_AAA);
+  width: var(--full-width);  */
+
+  /* input, select { */
+    /* border: var(--borderWidth) solid var(--color_text_primary);
+    border-radius: var(--borderRadius_primary);
+
+    background-color: inherit;
+
+    color: inherit; */
+  /* } */
+
+  /* select:focus-visible {
+    outline: none;
+  } */
+
+  
+/* } */
+
+/* .inputGroup:not(:last-child) { */
+  /* margin-block-end: var(--gap_1); */
+  /* margin-block-end: 0; */
+/* } */
+
+ /* .inputGroup:hover {
+  color: var(--color_accent);
+ }
+
+.inputGroup:focus-within, 
+.inputGroup:has(input:focus-visible), 
+.inputGroup:has(select:focus-visible) {
+  color: var(--color_accent);
+
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+
+  input, select {
+    border-color: var(--color_accent);
+  }
+} */
+
+.buttonsConainer {
+  display: flex;
+  gap: var(--gap_3);
+
+  margin-block-start: var(--gap_5);
+}
+
+.link_goBack {
+  display: block;
+  margin-block-start: var(--gap_1);
+
+  color: var(--color_text_primary);
+}
+
+.color_text_secondary {
+  color: var(--color_text_secondary);
+}
+
+.color_background_yellow_light {
+  background-color: var(--color_yellow_light);
+  border-image: conic-gradient(var(--color_yellow_light), var(--color_yellow_light)) fill 0/0/0 var(--outlineWidth) 0 var(--outlineWidth);
+}
+
+.color_background_red {
+  background-color: var(--color_red_background);
+  border-image: conic-gradient(var(--color_red_background), var(--color_red_background)) fill 0/0/0 var(--outlineWidth) 0 var(--outlineWidth);
+}
+
+.color_text_red {
+  color: var(--color_fail);
+}
+
+.color_text_white {
+  color: var(--color_text_primary);
+}
+
+.color_text_magenta_dark {
+  color: var(--color_magenta_dark);
+}
+
+.color_text_magenta_light {
+  color: var(--color_magenta_light_1);
+}
+
+.ellipsis {
+  display: block;
+  
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.teamList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myTeam, .myTeam:is(:nth-child(2n + 1)), .myTeam:is(:nth-child(2n)) {
+  background-color: var(--color_background_team);
+}
+
+.highlighted, .highlighted:is(:nth-child(2n + 1)) {
+  /* color: var(--color_background_primary); */
+  animation-name: simpleChangePosition;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  /* background-color: var(--color_success_best); */
+}
+
+/* .highlighted > * {
+  color: var(--color_background_primary) !important;
+} */
+
+.first {
+  color: var(--color_success_best);
+}
+
+.second {
+  color: var(--color_success_second);
+}
+
+.third {
+  color: var(--color_success_third);
+}
+
+.fourth {
+  color: var(--color_success_fourth);
+}
+
+.fifth {
+  color: var(--color_success_fifth);
+}
+
+.color_team {
+  color: var(--color_team);
+}
+
+.color_kart {
+  color: var(--color_kart);
+}
+
+a:is(.active) {
+  color: var(--color_accent);
+
+  path {
+    fill: var(--color_accent);
+  }
+}
+
+@keyframes simpleChangePosition {
+  0% {
+    background-color: unset;
+    color: unset;
+  }
+
+  50% {
+    background-color: var(--color_success_second);
+    color: var(--color_background_primary);
+  }
+
+  100% {
+    background-color: unset;
+    color: unset;
+  }
+}

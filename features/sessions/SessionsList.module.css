@@ -1,0 +1,11 @@
+.sessionsList__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionsList__sessionsContainer {
+  width: 100%;
+  min-height: var(--panelRightHeight);
+  margin-block-end: var(--toolBarHeight);
+  padding-block-end: var(--gap_1);
+}

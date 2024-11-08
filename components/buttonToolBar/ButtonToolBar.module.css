@@ -1,0 +1,26 @@
+.buttonToolBar {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: var(--toolBarButtonWidth); */
+  align-items: center;
+  gap: var(--toolBarButtonGap);
+
+  color: var(--color_text_secondary);
+  text-decoration: none;
+}
+
+.buttonToolBar:hover {
+  
+  path {
+    fill: var(--color_accent);
+  }
+}
+
+.buttonToolBar:focus-visible {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset_big);
+
+  path {
+    fill: var(--color_accent);
+  }
+}

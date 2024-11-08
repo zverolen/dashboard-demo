@@ -1,0 +1,16 @@
+:root {
+  --font-face_primary: "Ubuntu Mono", monospace;
+  --font-weight_primary: 400;
+  --font-weight_secondary: 700;
+  --font-size_primary: calc(15 / 16 * 1rem);
+
+  --line-height_primary: 1.2;
+
+  --text-transform_caption: uppercase;
+
+  --fontSize_min: calc(15 / 16 * 1rem);
+  --fontSize_ideal: calc((15 * 100 / 382) * 1vw);
+  --fontSize_primary: min(var(--fontSize_ideal), var(--fontSize_min));
+  --fontSize_inputs: calc(18 / 16 * 1rem);
+  --fontSize_inputs__scale: 0.833;
+}

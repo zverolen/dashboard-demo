@@ -1,0 +1,69 @@
+.positionsListItemMini {
+  position: relative;
+}
+
+.positionsListItemMini dl {
+  display: grid;
+  /* grid-template-columns: repeat(8, 1fr); */
+  grid-template-columns: var(--positionMiniPositionWidth) var(--positionMiniTeamWidth);
+  grid-template-rows: repeat(2, var(--positionRowHeight));
+  align-items: center;
+  justify-items: end;
+
+  padding-block: var(--gap_0);
+
+  div {
+    padding-inline-start: var(--gap_1);
+  }
+
+  div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  div:nth-child(2) {
+    /* grid-column: 2 / 9; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    width: var(--positionMiniTeamWidth);
+  }
+
+  div:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  div:nth-child(4) {
+    /* grid-column: 2 / 4; */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: start;
+  }
+
+  div:nth-child(5) {
+    /* grid-column: 5 / 9; */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: start;
+
+    padding-inline-start: var(--positionMiniLastLapWidth);
+  }
+}
+
+.positionsListItemMini:where(:nth-child(2n)) {
+  background-color: var(--color_background_secondary);
+}
+
+.overlayLink {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.overlayLink:is(:hover, :focus-visible) {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset_inside);
+}

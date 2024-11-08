@@ -1,0 +1,32 @@
+.positionsListMiniHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_1);
+
+  padding-block-start: var(--sitePadding_normal);
+  padding-inline-start: var(--sitePadding_normal);
+  padding-inline-end: var(--sitePadding_dense);
+  padding-block-end: var(--gap_3);
+
+  border-bottom: var(--borderWidth) solid var(--color_background_team);
+
+  h1 {
+    max-width: var(--positionsListMiniHeaderRaceName_width);
+  }
+
+  h2 {
+    text-transform: none;
+  }
+}
+
+.positionsListMiniHeader_raceDetails dl {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: var(--gap_1);
+}
+
+.minSession {
+  display: flex;
+  gap: var(--gap_1);
+}

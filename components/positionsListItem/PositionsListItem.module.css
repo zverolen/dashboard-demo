@@ -1,0 +1,233 @@
+.positionContainer {
+  position: relative;
+
+  padding: var(--positionPadding);
+}
+
+.overlayLink {
+  position: absolute;
+  inset: 0;
+  top: var(--positionPadding);
+
+  width: 100%;
+  height: var(--positionRowHeight);
+}
+
+.overlayLink:is(:hover, :focus-visible) {
+  outline: var(--outlineWidth) solid var(--color_accent);
+}
+
+.overlayLink:is(:hover, :focus-visible) + table {
+  ellipse {
+    fill: var(--color_accent);
+  }
+}
+
+.positionContainer:where(:nth-child(2n)) {
+  background-color: var(--color_background_secondary);
+}
+
+.positionContainer :is(table, td) {
+  display: block;
+}
+
+.position {
+  display: grid;
+  /* grid-template-columns: var(--gridPositionTemplateColumn);
+  grid-template-rows: var(--gridPositionTemplateRow); */
+  grid-template-columns: 
+    var(--positionPositionWidth) 
+    var(--positionTeamNumberWidth) 
+    var(--positionTeamNameColumnWidth) 
+    var(--positionLapsInRaceWidth) 
+    var(--positionLastLapTimeWidth)
+    var(--positionIntervalWidth) 
+    var(--positionLastColumnWidth);
+  grid-template-rows: var(--gridPositionTemplateRow);
+  align-items: center;
+  justify-items: end;
+  row-gap: var(--gap_0);
+
+  button {
+    color: var(--color_text_secondary);
+  }
+  
+}
+
+.position tr, .position th {
+  display: block;
+}
+
+.position tr {
+  padding-inline-end: var(--gap_1);
+}
+
+.position tr:nth-child(1) {
+  /* Position */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.position tr:nth-child(2) {
+  /* Team Number */
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.position tr:nth-child(3) {
+  /* Team Name */
+  /* grid-column: 3 / 6; */
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+
+  justify-self: start;
+
+  width: var(--positionTeamNameTextWidth);
+  padding: 0;
+}
+
+.position tr:nth-child(4) {
+  /* Total laps number */
+  /* grid-column: 6 / 7; */
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+.position tr:nth-child(5) {
+  /* Last lap time */
+  /* grid-column: 7 / 9; */
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+}
+
+.position tr:nth-child(6) {
+  /* Gap to ahead */
+  /* grid-column: 9 / 11; */
+  grid-column: 6 / 7;
+  grid-row: 1 / 2;
+}
+
+.position tr:nth-child(7) {
+  /* Interval dynamic */
+  /* grid-column: 11 / 12; */
+  grid-column: 7 / 8;
+  grid-row: 1 / 2;
+
+  padding-inline-end: var(--positionAddButtonWidth);
+}
+
+.position tr:nth-child(8) {
+  /* Session Number */
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.position tr:nth-child(9) {
+  /* Kart Number */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.position tr:nth-child(10) {
+  /* Pilot Name */
+  /* grid-column: 3 / 6; */
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+
+  width: var(--positionTeamNameTextWidth);
+  padding: 0;
+}
+
+.position tr:nth-child(11) {
+  /* Laps in session */
+  /* grid-column: 6 / 7; */
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.position tr:nth-child(12) {
+  /* Time of session */
+  /* grid-column: 7 / 9; */
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+  justify-self: center;
+
+  padding: 0;
+}
+
+.position tr:nth-child(13) {
+  /* Average lap time in session */
+  /* grid-column: 9 / 11; */
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+
+.position tr:nth-child(14) {
+  /* Dot button */
+  /* grid-column: 12 / 13; */
+  grid-column: 7 / 8;
+  grid-row: 1 / 2;
+
+  /* padding-left: 38px */
+  padding-right: 2px;
+}
+
+.position tr:nth-child(15) {
+  /* Details */
+  /* grid-column: 11 / 13; */
+  grid-column: 7 / 8;
+  grid-row: 2 / 3;
+
+  justify-self: start;
+
+  padding: 0;
+
+  button {
+    width: var(--positionLastColumnWidth);
+
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes simpleChangePosition {
+  0% {
+    background-color: var(--temp-color_background);
+  }
+
+  50% {
+    background-color: var(--temp-color_green);
+  }
+
+  100% {
+    background-color: var(--temp-color_background);
+  }
+}
+
+.button_openSession {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--buttonOpenSessionSize);
+  height: var(--buttonOpenSessionSize);
+
+  ellipse {
+    fill: var(--color_text_primary);
+  }
+}
+
+.button_openSession:hover {
+  ellipse {
+    fill: var(--color_accent);
+  }
+}
+
+.button_openSession:is(:focus-visible, :focus) {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineWidth);
+
+  ellipse {
+    fill: var(--color_accent);
+  }
+}

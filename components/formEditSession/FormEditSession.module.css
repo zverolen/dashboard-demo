@@ -1,0 +1,23 @@
+.formEditSession {
+  display: flex;
+  flex-direction: column;
+
+  margin-block-start: var(--formGap_top);
+  padding-inline-start: var(--sitePadding_normal);
+  /* padding-inline-end: var(--gap_1); */
+  padding-inline-end: var(--gap_2);
+  padding-block-end: var(--gap_1);
+
+  legend {
+    margin-block-end: var(--formHeadingGap_bottom);
+    text-transform: var(--text-transform_caption);
+  }
+
+  legend + div {
+    margin-block-end: var(--gap_1);
+  }
+}
+
+.formEditSession__button_secondary span {
+  background-color: var(--color_background_secondary) !important;
+}

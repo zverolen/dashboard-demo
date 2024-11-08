@@ -1,0 +1,21 @@
+.sessionDataCell {
+  display: flex;
+  column-gap: var(--gap_0);
+  /* text-transform: var(--text-transform_caption); */
+}
+
+.sessionDataCell :is(td, th) {
+  display: block;
+}
+
+.sessionDataCell_session {
+  gap: 0;
+
+  th {
+    color: var(--color_text_primary);
+  }
+}
+
+.ellipsis {
+  max-width: var(--sessionDataCellWidth_max);
+}

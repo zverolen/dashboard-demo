@@ -1,0 +1,16 @@
+.dataItem {
+  display: inline-flex;
+  gap: var(--dataGap_medium);
+}
+
+.dataItem_line {
+  display: flex;
+}
+
+.dataItem_session {
+  gap: 0;
+  
+  dt {
+    color: var(--color_text_primary);
+  }
+}

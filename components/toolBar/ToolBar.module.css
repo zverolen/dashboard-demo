@@ -1,0 +1,23 @@
+.toolBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  align-items: center;
+  
+  /* width: var(--full-width); */
+  width: var( --temp-site-width);
+  height: var(--toolBarHeight);
+  padding-inline: var(--toolBarPadding);
+
+  background-color: var(--color_background_secondary);
+  border-image: conic-gradient(var(--color_background_secondary) 0 0) fill 0/0/0 100vw;
+
+  path {
+    fill: var(--color_text_secondary);
+  }
+}

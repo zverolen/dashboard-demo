@@ -1,0 +1,27 @@
+.editRaceContentContainer {
+  padding-block-start: var(--formGap_top);
+  padding-inline: var(--sitePadding_normal);
+
+  h2 {
+    margin-block-end: var(--formHeadingGap_bottom);
+  }
+}
+
+.formEditRace:nth-of-type(2) {
+  margin-block-start: var(--gap_7);
+}
+
+.formEditRadio {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-auto-rows: auto;
+  column-gap: var(--gap_5);
+
+  margin-block-end: var(--gap_5);
+}
+
+.formEditRadio legend {
+  grid-area: 1 / 1 / 2 / 3;
+
+  margin-block-end: var(--gap_2)
+}

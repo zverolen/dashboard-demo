@@ -1,0 +1,48 @@
+.button {
+  display: flex;
+  align-items: center;
+
+  min-height: var(--WCAG_min-box-size_AAA);
+  min-width: var(--WCAG_min-box-size_AAA);
+  padding: 0;
+
+  color: var(--color_background_primary);
+  text-decoration: none;
+
+  border: none;
+
+  background-color: transparent;
+
+  span {
+    display: block;
+    width: var(--full-width);
+    padding-block: var(--button__visiblePadding_block);
+    padding-inline: var(--button__visiblePadding_inline);
+
+    background-color: var(--color_text_primary);
+
+    border: var(--borderWidth) solid var(--color_text_primary);
+    border-radius: var(--borderRadius_primary);
+  }
+}
+
+.button_secondary {
+  span {
+    color: var(--color_text_primary);
+  
+    background-color: transparent;
+  }
+}
+
+.button:focus-visible, .button:focus {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+}
+
+.button:is(:hover, :focus-visible) span {
+  color: var(--color_background_primary);
+
+  background-color: var(--color_accent);
+
+  border-color: var(--color_accent);
+}

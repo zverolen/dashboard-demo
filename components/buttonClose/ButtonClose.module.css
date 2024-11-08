@@ -1,0 +1,32 @@
+.buttonClose {
+  display: flex;
+  
+
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  width: var(--WCAG_min-box-size_AAA);
+  height: var(--WCAG_min-box-size_AAA);
+
+  /* svg {
+    stroke: var(--color_text_secondary);
+  } */
+
+  path {
+    /* stroke-width: var(--lineWidth); */
+    fill: var(--color_text_secondary);
+  }
+}
+
+.buttonClose:hover path {
+  fill: var(--color_accent);
+}
+
+.buttonClose:is(:focus-visible, :focus) {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+
+  path {
+    fill: var(--color_accent);
+  }
+}

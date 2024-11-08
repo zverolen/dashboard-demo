@@ -1,0 +1,20 @@
+/* .position__buttons {
+  display: flex;
+  gap: var(--temp-gap_small);
+}
+
+.position__buttons button {
+  width: var(--temp-min-size_AA);
+  height: var(--temp-min-size_AA);
+
+  color: var(--temp-color_text_primary);
+
+  background-color: var(--temp-color_background);
+
+  border: var(--temp-border-width) solid var(--temp-color_text_primary);
+}
+
+.position__buttons button:hover {
+  background-color: var(--temp-color_text_secondary);
+  border-color: var(--temp-color_text_secondary);
+} */

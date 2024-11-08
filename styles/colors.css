@@ -1,0 +1,43 @@
+:root {
+  --black_light: #222125;
+  --black_dark: #000000;
+  --white: #EBEBEB;
+  --grey_normal: #898989;
+  --grey_dull: #424242;
+  --accent_yellow: #d1bd10;
+  --accent_purple_grey: #565165;
+  --accent_purple_bright: #5319b3;
+  --accent_purple_lavender: oklch(65.35% 0.1357 293.91);
+  --green_green: oklch(82.18% 0.2093 153.5);
+  --green_yellow: oklch(82.84% 0.1938 129.27);
+  --yellow_dark: oklch(83.93% 0.165 97.54);
+  --orange: oklch(72.83% 0.169 32.83);
+  --red: oklch(66.6% 0.2045 15.75);
+  --red_dark: oklch(58.95% 0.2206 18.76);
+  --yellow_light: oklch(90.37% 0.1685 97.18);
+  --blue_light: oklch(82.14% 0.1016 232.04);
+  --magenta_dark: #b60189;
+  --magenta_light_1: #ea4db7;
+
+  --color_background_primary: var(--black_light);
+  --color_background_secondary: var(--black_dark);
+  --color_background_team: var(--accent_purple_grey);
+  --color_text_primary: var(--white);
+  --color_text_secondary: var(--grey_normal);
+  --color_disabled: var(--grey_dull);
+  --color_accent: var(--accent_purple_lavender);
+  /* Add more semantic name */
+  --color_yellow_dark: var(--yellow_dark);
+  --color_yellow_light: var(--yellow_light);
+  --color_magenta_dark: var(--magenta_dark);
+  --color_magenta_light_1: var(--magenta_light_1);
+  --color_success_best: var(--green_green);
+  --color_success_second: var(--green_yellow);
+  --color_success_third: var(--yellow_dark);
+  --color_success_fourth: var(--orange);
+  --color_success_fifth: var(--red);
+  --color_fail: var(--red);
+  --color_red_background: var(--red_dark);
+  --color_team: var(--color_yellow_light);
+  --color_kart: var(--blue_light);
+}

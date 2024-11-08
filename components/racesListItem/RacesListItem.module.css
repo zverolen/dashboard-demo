@@ -1,0 +1,24 @@
+.racesListItem {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: var(--WCAG_min-box-size_AAA);
+
+  color: var(--color_text_secondary);
+}
+
+.racesListItem a:focus-visible, .racesListItem a:focus {
+  outline: none;
+}
+
+.racesListItem:focus-within {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+}
+
+.racesListItem_active {
+  color: var(--color_text_primary);
+}

@@ -1,0 +1,29 @@
+.buttonAdd:is(a) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--lapButtonWidth);
+  height: var(--lapHeight);
+
+  path {
+    /* stroke-width: var(--lineWidth);
+    stroke: var(--color_text_secondary); */
+    fill: var(--color_text_secondary);
+  }
+}
+
+.buttonAdd:hover {
+  path {
+    stroke: var(--color_accent);
+  }
+}
+
+.buttonAdd:focus-visible, .buttonAdd:focus {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+
+  path {
+    stroke: var(--color_accent);
+  }
+}

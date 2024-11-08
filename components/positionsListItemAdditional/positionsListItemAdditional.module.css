@@ -1,0 +1,63 @@
+.positionAdditional {
+  margin-block-start: var(--positionAdditionalGap);
+  padding-block-end: var(--positionDetailsPadding);
+  padding-inline: var(--positionDetailsPadding);
+
+  button {
+    height: var(--WCAG_min-box-size_AA);
+    /* width: var(--full-width); */
+    margin-block-start: var(--gap_2);
+
+    text-align: start;
+  }
+}
+
+.positionAdditional :is(table, th, td) {
+  display: block;
+}
+
+.tableTimes tbody {
+  display: flex;
+  align-items: center;
+  gap: var(--positionDetailsTimeRowGap);
+}
+
+.tableTimes tr {
+  display: flex;
+  gap: var(--gap_1);
+}
+
+.tablePilots tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: var(--gap_1);
+}
+
+.tablePilots tr {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap_1);
+
+  flex-basis: var(--positionDetailsPilotWidth);
+}
+
+.tablePilots th {
+  max-width: var(--positionDetailsPilotMaxWidth);
+}
+
+.tableIncidents {
+  margin-block: var(--positionDetailsGap);
+}
+
+.tableIncidents tbody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_1);
+}
+
+.tableIncidents tr {
+  display: flex;
+  gap: var(--gap_1);
+}

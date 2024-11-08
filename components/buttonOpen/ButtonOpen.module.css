@@ -1,0 +1,27 @@
+.buttonOpen {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  width: var(--buttonOpenSessionSize);
+  height: var(--buttonOpenSessionSize);
+
+  ellipse {
+    fill: var(--color_text_secondary);
+  }
+}
+
+.buttonOpen:hover {
+  ellipse {
+    fill: var(--color_accent);
+  }
+}
+
+.buttonOpen:is(:focus-visible, :focus) {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineWidth);
+
+  ellipse {
+    fill: var(--color_accent);
+  }
+}

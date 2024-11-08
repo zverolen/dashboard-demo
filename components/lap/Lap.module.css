@@ -1,0 +1,94 @@
+.lap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: var(--lapGap);
+
+  /* padding-inline-start: var(--gap_1); */
+
+  /* a {
+    position: static;
+  } */
+   height: var(--lapHeight);
+}
+
+.lap:not(:nth-last-child(1)) {
+  border-bottom: var(--borderWidth) solid var(--accent_purple_grey);
+}
+
+/* .lap:nth-child(2n) {
+  background-color: var(--color_background_secondary);
+} */
+
+.lap :is(table, th, tr, td) {
+  display: block;
+}
+
+.lap table {
+  flex: 1 0 auto;
+
+  tr:nth-child(1) {
+    width: var(--lapNumberWidth);
+  }
+
+  tr:nth-child(2) {
+    width: var(--lapTimeWidth);
+  }
+
+  tr:nth-child(3) {
+    width: var(--lapCrossingTimeWidth);
+  }
+
+  tr:nth-child(4) {
+    width: var(--lapEfficiencyWidth);
+  }
+}
+
+.lap tbody {
+  /* display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-items: center;
+  align-items: center;
+  gap: var(--gap_1); */
+  display: flex;
+  align-items: center;
+  gap: var(--lapGap);
+}
+
+.lap tr:nth-child(1) {
+  justify-self: start;
+}
+
+.efficiencyPercent {
+  width: var(--lapEfficiencyWidth);
+
+  border: var(--borderWidth) solid var(--color_text_secondary);
+}
+
+.first td {
+  color: var(--color_success_best);
+}
+
+.first {
+  .efficiencyPercent {
+    border-color: var(--color_success_best);
+  }
+
+  
+}
+
+.first a path {
+  fill: var(--color_success_best);
+}
+
+.first .efficiencyPercent span {
+  background-color: var(--color_success_best);
+}
+
+.bar {
+  display: block;
+  height: var(--gap_2);
+
+  background-color: var(--color_text_secondary);
+}

@@ -1,0 +1,69 @@
+
+
+.inputRadio {
+  display: flex;
+  align-items: center;
+  gap: var(--gap_2);
+
+  height: var(--WCAG_min-box-size_AAA);
+  width: var(--full-width);
+
+  input {
+    appearance: none;
+  
+    width: var(--inputRadio-size);
+    height: var(--inputRadio-size);
+  
+    outline: var(--borderWidth) solid var(--color_text_primary);
+    outline-offset: var(--inputRado_offset);
+    
+    border: none;
+    border-radius: var(--borderRadius_circle);
+  }
+}
+
+.inputRadio:nth-of-type(1) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.inputRadio:nth-of-type(2) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.inputRadio:hover {
+  color: var(--color_accent);
+
+  input {
+    outline-color: var(--color_accent);
+  }
+
+  input:checked {
+    background-color: var(--color_accent);
+  }
+}
+
+.inputRadio:focus-within {
+  color: var(--color_accent);
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+
+  input {
+    outline-color: var(--color_accent);
+  }
+
+  input:checked {
+    background-color: var(--color_accent);
+  }
+}
+
+.inputRadio input:checked {
+  background-color: var(--color_text_primary);
+}
+
+.inputRadio input:focus, .inputRadio input:focus-visible {
+  outline-color: var(--color_accent);
+}
+
+.inputRadio input:checked:focus, .inputRadio input:checked:focus-visible {
+  background-color: var(--color_accent);
+}

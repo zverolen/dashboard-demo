@@ -1,0 +1,13 @@
+.racesHeader {
+  padding-block-start: var(--sitePadding_dense);
+  padding-inline: var(--sitePadding_dense);
+}
+
+.racesList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  margin-block-start: var(--gap_5);
+  padding-inline: var(--sitePadding_normal);
+}

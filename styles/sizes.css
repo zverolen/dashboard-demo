@@ -1,0 +1,144 @@
+:root {
+  --gap_0: calc(4 / 16 * 1rem);
+  --gap_1: calc(8 / 16 * 1rem);
+  --gap_2: calc(16 / 16 * 1rem);
+  --gap_3: calc(24 / 16 * 1rem);
+  --gap_4: calc(32 / 16 * 1rem);
+  --gap_5: calc(40 / 16 * 1rem);
+  --gap_6: calc(48 / 16 * 1rem);
+  --gap_7: calc(56 / 16 * 1rem);
+  --gap_8: calc(64 / 16 * 1rem);
+
+  --fullPageHeight: 100vh;
+  --fullContainerHeight: 100%;
+  --full-width: 100%;
+
+  --device-width: calc(430 / 16 * 1rem);
+  --temp-with_max: calc(640 / 16 * 1rem);
+  --temp-width_ideal: 40vw;
+  --temp-site-width: clamp(var(--device-width), var(--temp-width_ideal), var(--temp-with_max));
+
+  --sitePadding_normal: var(--gap_2);
+  --sitePadding_dense: var(--gap_1);
+
+  --outlineOffset: var(--gap_0);
+  --outlineOffset_big: var(--gap_1);
+  --outlineOffset_inside: calc(-4 / 16 * 1rem);
+
+  --outlineWidth: calc(2 / 16 * 1rem);
+  --borderWidth: calc(1 / 16 * 1rem);
+  --lineWidth: 2;
+
+  --borderRadius_circle: 50%;
+  --borderRadius_primary: calc(2 / 16 * 1rem);
+
+  /* --racesName_width: calc(346 / 16 * 1rem); */
+
+  --inputRadio-size: calc(16 / 16 * 1rem);
+  /* --inputRado_offset: calc(6 / 16 * 1rem); */
+  --inputRado_offset: calc(5 / 16 * 1rem);
+
+  --inputText__width: calc(161 / 16 * 1rem);
+  /* The height of the input should be 30px but it's enlarged to account for the transform for the text*/
+  /* --inputText__height: calc(36 / 16 * 1rem); */
+  --inputText__height: calc(30 / 16 * 1rem);
+
+  --button__visiblePadding_block: calc(6 / 16 * 1rem);
+  --button__visiblePadding_inline: calc(16 / 16 * 1rem);
+  --button__visibleHeight: calc(30 / 16 * 1rem);
+
+  --buttonOpenSessionSize: calc(24 / 16 * 1rem);
+
+  --dataGap_tight: var(--gap_0);
+  --dataGap_medium: var(--gap_1);
+
+  --headerPaddingBottom: var(--gap_3);
+  --headerPaddingTop: var(--gap_2);
+  --headerHeight: calc(92 / 16 * 1rem);
+  --header__raceWidth: calc(120 / 16 * 1rem);
+
+  --panelLeftWidth: calc(164 / 16 * 1rem);
+  --panelRightHeight: calc(100vh - var(--toolBarHeight));
+
+  --positionPadding: var(--gap_1);
+  --positionRowHeight: calc(24 / 16 * 1rem);
+
+  --positionPositionWidth: calc(31 / 16 * 1rem);
+  --positionTeamNumberWidth: calc(23 / 16 * 1rem);
+  --positionTeamNameColumnWidth: calc(129 / 16 * 1rem);
+  --positionTeamNameTextWidth: calc(121 / 16 * 1rem);
+  --positionLapsInRaceWidth: calc(31 / 16 * 1rem);
+  --positionLastLapTimeWidth: calc(68 / 16 * 1rem);
+  --positionIntervalWidth: calc(76 / 16 * 1rem);
+  --positionLastColumnWidth: calc(56 / 16 * 1rem);
+  --positionAddButtonWidth: calc(18 / 16 * 1rem);
+  --positionOpenButtonPadding: calc(2 / 16 * 1rem);
+
+  --positionAdditionalGap: var(--gap_3);
+  --positionDetailsGap: var(--gap_2);
+  --positionDetailsPadding: var(--gap_1);
+  --positionDetailsTimeRowGap: var(--gap_2);
+  --positionDetailsPilotWidth: 45%;
+  --positionDetailsPilotMaxWidth: calc(130 / 16 * 1rem);
+  /* --positionTeamWidthMax: calc(94 / 16 * 1rem); */
+  --positionTeamWidthMax: calc(106 / 16 * 1rem);
+
+  --positionMiniPositionWidth: calc(31 / 16 * 1rem);
+  --positionMiniTeamWidth: calc(128 / 16 * 1rem);
+  --positionMiniLastLapWidth: calc(68 / 16 * 1rem);
+
+  --panelRightWidth: calc(266 / 16 * 1rem);
+  --sessionsListTeamWidth: calc(160 / 16 * 1rem);
+  
+  --sessionDataCellWidth_max: calc(95 / 16 * 1rem);
+  /* --sessionControlsWidth: calc(64 / 16 * 1rem); */
+  --sessionControlsWidth: calc(56 / 16 * 1rem);
+  --sessionControlsHeight: calc(24 / 16 * 1rem);
+
+  --sessionItemGap: var(--gap_1);
+
+  --sessionLineOneGap: calc(6 / 16 * 1rem);
+  --sessionLineTwoGap: calc(12 / 16 * 1rem);
+
+  --sessionDataGap: calc(2 / 16 * 1rem);
+
+  --sessionSessionWidth: calc(26 / 16 * 1rem);
+  --sessionLapWidth: calc(33 / 16 * 1rem);
+  --sessionPilotWidth: calc(83 / 16 * 1rem);
+  --sessionKartWidth: calc(15 / 16 * 1rem);
+  --sessionTimeInSessionWidth: calc(53 / 16 * 1rem);
+  --sessionBestLapWidth: calc(100 / 16 * 1rem);
+  --sessionAvgLapWidth: calc(94 / 16 * 1rem);
+
+  --sessionButtonWidth: calc(6 / 16 * 1rem);
+  --sessionLinkWidth: calc(31 / 16 * 1rem);
+
+  --sessionButtonTop: calc((24 + 8) / 16 * 1rem);
+  --sessionLinkPadding: calc(3 / 16 * 1rem);
+
+  --positionsListMiniHeaderRaceName_width: calc(150 / 16 * 1rem);
+
+  --lapHeight: calc(32 / 16 * 1rem);
+  --lapEfficiencyWidth: calc(40 / 16 * 1rem);
+  --lapGap: calc(14 / 16 * 1rem);
+
+  --lapNumberWidth: calc(23 / 16 * 1rem);
+  --lapTimeWidth: calc(60 / 16 * 1rem);
+  --lapCrossingTimeWidth: calc(53 / 16 * 1rem);
+  --lapEfficiencyWidth: calc(40 / 16 * 1rem);
+  --lapButtonWidth: calc(16 / 16 * 1rem);
+
+  --formHeaderPilotName: calc(75 / 16 * 1rem);
+  --formGap_top: var(--gap_5);
+  --formHeadingGap_bottom: var(--gap_3);
+
+  --statsScreenGap_top: var(--formGap_top);
+  --statsScreenHeadingGap_bottom: var(--gap_3);
+  --statsScreenTimeDiffPadding: calc(53 / 16 * 1rem);
+
+  --toolBarHeight: calc(82 / 16 * 1rem);
+  --toolBarButtonWidth: calc(50 / 16 * 1rem);
+  --toolBarButtonGap: var(--gap_1);
+  /* --toolBarPadding: var(--gap_2); */
+  --toolBarPadding: var(--gap_3);
+}

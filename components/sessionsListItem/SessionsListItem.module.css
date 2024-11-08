@@ -1,0 +1,204 @@
+.sessionItem {
+  position: relative;
+
+  padding: var(--sessionItemGap);
+
+  dl > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: var(--positionRowHeight);
+
+    div {
+      gap: var(--sessionDataGap);
+    }
+  }
+
+  a[aria-label="Edit session"] {
+    position: absolute;
+    left: 0;
+    right: var(--sessionItemGap);
+    top: var(--sessionItemGap);
+
+    display: block;
+
+    width: 100%;
+    height: var(--positionRowHeight);
+    padding-block-start: var(--sessionLinkPadding);
+    padding-inline-end: var(--sessionItemGap);
+
+    text-align: right;
+  }
+
+  a[aria-label="Edit session"]:hover {
+    ellipse {
+      fill: var(--color_accent);
+    }
+  }
+
+  a[aria-label="Edit session"]:focus-visible {
+    outline: none;
+
+    svg {
+      outline: var(--outlineWidth) solid var(--color_accent);
+      outline-offset: var(--outlineOffset);
+    }
+
+    ellipse {
+      fill: var(--color_accent);
+    }
+  }
+
+  button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--sessionButtonTop);
+
+    display: block;
+
+    width: 100%;
+    height: var(--positionRowHeight);
+    padding-inline-end: var(--sessionItemGap);
+
+    text-align: right;
+
+    color: var(--color_text_secondary);
+  }
+
+  /* button:hover {
+    span {
+      background-color: transparent;
+      color: var(--color_accent);
+    }
+  } */
+
+  button:focus-visible {
+    outline: none;
+    
+    span {
+      outline: var(--outlineWidth) solid var(--color_accent);
+      outline-offset: var(--outlineOffset);
+    }
+  }
+}
+
+.sesstionItem__lineOne {
+  gap: var(--sessionLineOneGap);
+
+  div:nth-child(1) {
+    width: var(--sessionSessionWidth);
+  }
+
+  div:nth-child(2) {
+    width: var(--sessionLapWidth);
+  }
+
+  div:nth-child(3) {
+    width: var(--sessionPilotWidth);
+  }
+
+  div:nth-child(4) {
+    width: var(--sessionKartWidth);
+  }
+
+  div:nth-last-child(1) {
+    width: var(--sessionTimeInSessionWidth);
+  }
+}
+
+.sesstionItem__lineTwo {
+  gap: var(--sessionLineTwoGap);
+
+  /* div:nth-child(1) {
+    width: var(--sessionBestLapWidth);
+  }
+
+  div:nth-child(2) {
+    width: var(--sessionAvgLapWidth);
+  } */
+}
+
+.sessionItem:nth-child(2n) {
+  background-color: var(--color_background_secondary);
+}
+
+.sessionItem:has(button[aria-expanded="true"]) {
+  padding-block-end: 0;
+}
+
+.sessionItem__table {
+  display: block;
+  padding-left: var(--gap_1);
+}
+
+.sessionItem__table tbody {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto auto;
+  gap: var(--gap_1);
+}
+
+.sessionItem__table tr:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.sessionItem__table tr:nth-child(3) {
+  grid-column: 3 / 7;
+  grid-row: 1 / 2;
+}
+
+.sessionItem__table tr:nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.sessionItem__table tr:nth-child(6) {
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+}
+
+.sessionItem__table tr:nth-child(7) {
+  grid-column: 5 / 10;
+  grid-row: 2 / 3;
+}
+
+.sessionItem ul {
+  margin-block-start: var(--gap_2);
+}
+
+.sessionsListItem__controls {
+  position: absolute;
+  right: var(--sessionControlsRight);
+  top: var(--sessionControlsTop);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: var(--sessionControlsWidth);
+  height: var(--sessionControlsHeight);
+}
+
+.sessionsListItem__button_last:is(button) {
+  position: relative;
+  top: 0;
+  
+  width: unset;
+  /* padding-inline: var(--gap_1); */
+
+  color: var(--color_text_primary);
+  text-decoration: underline;
+}
+
+.sessionsListItem__button_last:hover {
+  color: var(--color_accent);
+}
+
+.sessionsListItem__button_last:focus-visible, .sessionsListItem__button_last:focus {
+  color: var(--color_accent);
+
+  outline-offset: 0;
+}

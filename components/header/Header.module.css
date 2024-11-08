@@ -1,0 +1,47 @@
+.header {
+  height: var(--headerHeight);
+  padding-block-start: var(--headerPaddingTop);
+  padding-block-end: var(--headerPaddingBottom);
+  padding-inline: var(--sitePadding_normal);
+
+  border-bottom: var(--borderWidth) solid var( --color_background_team);
+
+  h1 {
+    max-width: var(--header__raceWidth);
+
+    text-transform: var(--text-transform_caption);
+  }
+
+  h2 {
+    text-transform: none;
+  }
+}
+
+.header:has(h1:only-child) {
+  display: flex;
+  align-items: center;
+  padding-block: 0;
+}
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__line:nth-child(2) {
+  justify-content: flex-start;
+  gap: var(--gap_2);
+}
+
+.header__line:nth-child(1) {
+  margin-block-end: var(--gap_2);
+}
+
+.header__line > div {
+  display: inline-flex;
+  gap: var(--gap_1);
+}
+
+/* .header__devider {
+  margin-inline: var(--dataGap_medium);
+} */

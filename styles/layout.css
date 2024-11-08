@@ -1,0 +1,7 @@
+:root {
+  --gridPositionTemplateColumn: repeat(12, 1fr);
+  --gridPositionTemplateRow: repeat(2, var(--positionRowHeight));
+
+  --sessionControlsTop: calc(4 / 16 * 1rem);
+  --sessionControlsRight: calc(0 / 16 * 1rem);
+}

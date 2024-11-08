@@ -1,0 +1,33 @@
+.formHeader {
+  padding-inline-start: var(--gap_1);
+  padding-block-end: var(--gap_1);
+  background-color: var(--color_background_secondary);
+}
+
+.formHeader__lineOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    display: flex;
+    gap: var(--gap_2);
+  }
+
+  span {
+    max-width: var(--sessionsListTeamWidth);
+  }
+}
+
+.formHeader__lineTwo {
+  padding-inline-end: var(--gap_1);
+
+  dl {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div:nth-child(3) dd {
+    max-width: var(--formHeaderPilotName);
+  }
+}

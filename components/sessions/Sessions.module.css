@@ -1,0 +1,9 @@
+.panelRight {
+  position: relative;
+  left: var(--panelLeftWidth);
+
+  width: var(--panelRightWidth);
+  min-height: var(--panelRightHeight);
+
+  border-left: var(--borderWidth) solid var(--color_background_team);
+}

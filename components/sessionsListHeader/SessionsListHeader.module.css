@@ -1,0 +1,38 @@
+.sessionsList__header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-inline-start: var(--sitePadding_normal);
+  padding-inline-end: calc(6 / 16 * 1rem);
+  padding-block-end: var(--sitePadding_normal);
+  padding-block-start: var(--sitePadding_normal);
+
+  background-color: var(--color_background_secondary);
+}
+
+.sessionsList__headerLineOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-block-end: var(--gap_1);
+
+  h2 {
+    display: flex;
+    gap: var(--gap_2);
+  }
+
+  span {
+    max-width: var(--sessionsListTeamWidth);
+  }
+}
+
+.sessionsList__headerLineTwo dl > div {
+  display: flex;
+  gap: var(--gap_1);
+}
+
+.sessionsList__headerLineTwo dl {
+  display: flex;
+  gap: var(--gap_2);
+}

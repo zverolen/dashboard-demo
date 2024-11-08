@@ -1,0 +1,24 @@
+.buttonLink {
+  /* min-width: initial;
+  min-height: initial; */
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+
+  text-decoration: underline;
+  color: var(--color_text_primary);
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.buttonLink:is(:focus, :focus-visible, :hover) {
+  color: var(--color_accent);
+}
+
+.buttonLink:focus-visible {
+  outline: var(--outlineWidth) solid var(--color_accent);
+  outline-offset: var(--outlineOffset);
+}
