@@ -1,3 +1,5 @@
+
+
 # Race Dashboard
 
 The Race Dashboard app helps in making strategic decisions during a race by providing necessary metrics. Developed and tested by go kart races.
@@ -5,69 +7,30 @@ The Race Dashboard app helps in making strategic decisions during a race by prov
 ## Project Overview
 
 This repository showcases a React-based application, including both implementation and UI/UX design. The code is provided for viewing purposes as a demonstration of React development and design practices.
+At the moment, only the mobile version is available.
 
-![Main App Screenshot](path_to_screenshot.png)
+![Main App Screenshot](./readme/cover.png)
 [Add a key screenshot that captures the essence of your application]
+
+## Expectations from the app:
+- **The app should provide as much information as possible at once**
+- **the information should be easily scannable and suitable for quick evaluation and comparison**
+- **different pieces of information should be easily distingushable**
+- **all visual noise should be reduces as much as possible, cognitive load and distractions should be kept to a minimum**
+- **all user tasks should be made with least effort possible**
 
 ## Design System & UI/UX Decisions
 
-### Visual Design
-- **Color Palette**: [Explain your color choices and their purpose]
-  - Primary: [color code] - Used for [purpose]
-  - Secondary: [color code] - Used for [purpose]
-  - Background: [color code] - Chosen for [reason]
-
-- **Typography**
-  - Primary Font: [font name] - Used for [purpose]
-  - Secondary Font: [font name] - Used for [purpose]
-  - Sizing System: [Explain your typographic scale]
-
-- **Component Design**
-  - [Describe any unique component design patterns]
-  - [Explain any specific UI patterns you implemented]
-
 ### User Experience Considerations
-- **Navigation Structure**: [Explain your navigation choices]
+- **Navigation Structure**: all navigation related to the teams' data is made via informational elements (like names of the teams) and tap zones are much bigger than corresponding icons; intuitivity is sacrificied for the screen real estate and cleanness; additional navigation is implemented as a bottom toolbar and is design to be easily used with fingers of one hand.
 - **Information Architecture**: [Describe how you organized content]
-- **Interaction Patterns**: [Detail any specific interaction patterns]
-
-### Accessibility Features
-- **Keyboard Navigation**
-  - Full keyboard support across all interactive elements
-  - Clear focus indicators
-  - [Other keyboard features]
-
-- **Screen Reader Optimization**
-  - ARIA labels and landmarks
-  - Semantic HTML structure
-  - Alternative text for images
-  - [Other screen reader considerations]
-
-- **Visual Accessibility**
-  - Color contrast ratios meeting WCAG standards
-  - Text scaling support
-  - [Other visual accessibility features]
-
-![Feature With Accessibility Highlights](path_to_feature_screenshot.png)
-[Screenshot demonstrating key accessibility features]
-
-## Design Assets
-
-### Figma Project
-Complete UI/UX design available on Figma:
-- [Figma Project Link]
-
-### Key Screens
-![Feature 1](path_to_feature1_screenshot.png)
-[Description of this feature/screen and its key design elements]
-
-![Feature 2](path_to_feature2_screenshot.png)
-[Description of this feature/screen and its key design elements]
+- **Interaction Patterns**: the main navigation provides step-by-step interaction style (from a team to the specifics of the current sesstion to adding details about the session and its laps); access to all information and actions that are not directly related to teams are isolated to the toolbar; filling out the forms automatically brings the user to the previous screen; 
 
 ## Technical Implementation
 
 ### Technology Stack
-- React [version]
+- React 18.2.0
+- Redux 9.1.2
 - [Other major libraries/frameworks used]
 - [Key technical choices]
 
@@ -105,3 +68,62 @@ This repository is for code review purposes. To explore the codebase:
 [Your Name]
 [Professional Links - GitHub, LinkedIn, etc.]
 [How to reach you for questions]
+
+### Visual Design
+- **Color Palette**: the dark theme was chosen because it is traditional for such systems and is familiar to the user; also, it contributes to lowering the carbon impact. The pallette incorporates a number of different bright colors to highlight aspects of race data. All colors comply at least with the WCAG 2.2 Level AA.
+  - Text and background: light and dark shades of grey are used for text and background; true black is used as an alternative background color for elements differentiation.
+  - Main accent colors: shades of purple; a less saturated variant is used for highlighting a team in the list and deviders; a more saturated color is used for controls.
+  - Additional accent colors: a number of colors with semantic and/or traditional meaning are used to communicate different signals to the user; they help to draw the attention, distinguish between numbers, show the level of success of teams.
+
+![Screenshot](path_to_screenshot.png)
+[Screenshot of the app or figma to showcast the colors]
+
+- **Typography**
+  - Font faminly: Ubuntu Mono; mono font face was chosen because of large ammount of numbers used and visual organisation of data.
+  - Font variety: besides color differentions only text case is used to establish hierarchial order between the elements; the links are traditionally underlined.
+  - Sizing: 15px font size is set for all elements because it is the biggest size that adequately fits the layout at the default screen size (mobile); below the default screen size the font size is scaled automatically alongside with other elements; additional font size of 18px is used for inputs to prevent zooming in on input (may be revisited at the next development stage).
+
+- **Component Design**
+  - The screens consist of traditional elements;
+  - Almost all information is organised in tables; even though there are no lines that form table cells, the pattern forces data in corresponding table cells to remain in strict rows - this is needed for quick scanning and comparison; this pattern is followed in all elements that represent the race data.
+
+### Accessibility Features
+
+Visual implementation doesn't consider a number of accessibility principle due to the specifics of the app and the main requirement to fit as much data as possible on a small screen. That said, the WCAG 2.2 guidance was was followed anywhere it was possible (for example, tap zones). The app will benefit from following the technical accessibility principles like keyboard navigation and screen reader support especially for viewing the results of past races. Currently, this part is under developement.
+
+- **Keyboard Navigation**
+  - Under development
+
+- **Screen Reader Optimization**
+  - Under development
+
+- **Visual Accessibility**
+  - Color contrast ratios meet WCAG 2.2 criteria (minimum Level AA)
+  - Text scaling support
+
+![Feature With Accessibility Highlights](path_to_feature_screenshot.png)
+[Screenshot demonstrating key accessibility features like focused state]
+
+## Design Assets
+
+### Figma Project
+Complete UI/UX design available on Figma:
+- [Figma Project Link](https://www.figma.com/design/wXrteEcg8uDTsmtVstEKRm/Design?node-id=1-2&t=7gwSXWcHseae3ilt-1)
+
+### Key Screens
+![Components](./readme/screenshotComponents.png)
+[Reusable components: the smallest elements and composite elements that are reused across the project]
+
+![Screens](./readme/screenshotScreens.png)
+[Default screens of the app that give the general idea]
+
+![Variants](./readme/screenshotVariants.png)
+[Screens that show different states of components and variations to the screens]
+
+![Design Tokens](./readme/screenshotDesignTokens.png)
+[Design tokens with several levels of abstractions are used to keep reusable and co-dependent units]
+
+![Design Approach](./readme/screenshotDesignApproach.png)
+[How design is handeled: underlying structure is implemented in the compoenents; for example, invisible tap zones around the elements that have smaller visual size]
+
+
