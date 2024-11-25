@@ -70,8 +70,8 @@ This repository is for code review purposes. To explore the codebase, please, br
   - Main accent colors: shades of purple; a less saturated variant is used for highlighting a team in the list and deviders; a more saturated color is used for controls.
   - Additional accent colors: a number of colors with semantic and/or traditional meaning are used to communicate different signals to the user; they help to draw the attention, distinguish between numbers, show the level of success of teams.
 
-![Screenshot](path_to_screenshot.png)
-[Screenshot of the app or figma to showcast the colors]
+![Color choices](./readme/demoColors.png)
+*Screenshot of the app or figma to showcast the colors*
 
 - **Typography**
   - Font faminly: Ubuntu Mono; mono font face was chosen because of large ammount of numbers used and visual organisation of data.
