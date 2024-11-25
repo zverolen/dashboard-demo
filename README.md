@@ -118,6 +118,9 @@ This repository is for code review purposes. To explore the codebase, please, br
 ## Contact
 
 Elena Zvereva
+
 Beograd, Serbia
+
 [LinkedIn](https://www.linkedin.com/in/elena-zvereva-722b3177/)
+
 [Telegram](https://t.me/zverolen)
