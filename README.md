@@ -4,10 +4,9 @@
 
 The Race Dashboard app helps in making strategic decisions during a race by providing necessary metrics. Developed and tested by go kart races.
 
-## Project Overview
+This is a demonstration repository showcasing implementation of the front-end side of the project. The code is isolated and provided for viewing purposes.
 
-This repository showcases a React-based application, including both implementation and UI/UX design. The code is provided for viewing purposes as a demonstration of React development and design practices.
-At the moment, only the mobile version is available.
+At the moment, only the mobile version is available. See the [Figma project](#design) for complete UI/UX design details.
 
 ![Main App Screenshot](./readme/cover.png)
 
@@ -50,24 +49,14 @@ src/
 ```
 
 ### Key Features
-- [Main feature 1]
-- [Main feature 2]
-- [Main feature 3]
+- Real-time race and teams data update.
+- Customization of the race parameters. 
+- Keeping track of pilots and cars for all teams.
+- Calculating parameters needed for the decisions during the race.
 
 ## Viewing the Code
 
-This repository is for code review purposes. To explore the codebase:
-
-1. Browse the source code directly on GitHub
-2. Clone the repository for local viewing:
-   ```bash
-   git clone [repository-url]
-   ```
-
-## Notes
-- This is a demonstration repository showcasing both design and implementation
-- The code is provided for viewing purposes only
-- See the Figma project for complete UI/UX design details
+This repository is for code review purposes. To explore the codebase, please, browse the source code directly on GitHub.
 
 ## Contact
 
@@ -75,7 +64,7 @@ This repository is for code review purposes. To explore the codebase:
 [Professional Links - GitHub, LinkedIn, etc.]
 [How to reach you for questions]
 
-### Visual Design
+### Visual Design {#design}
 - **Color Palette**: the dark theme was chosen because it is traditional for such systems and is familiar to the user; also, it contributes to lowering the carbon impact. The pallette incorporates a number of different bright colors to highlight aspects of race data. All colors comply at least with the WCAG 2.2 Level AA.
   - Text and background: light and dark shades of grey are used for text and background; true black is used as an alternative background color for elements differentiation.
   - Main accent colors: shades of purple; a less saturated variant is used for highlighting a team in the list and deviders; a more saturated color is used for controls.
