@@ -96,9 +96,6 @@ Visual implementation doesn't consider a number of accessibility principle due t
   - Color contrast ratios meet WCAG 2.2 criteria (minimum Level AA)
   - Text scaling support
 
-![Feature With Accessibility Highlights](path_to_feature_screenshot.png)
-[Screenshot demonstrating key accessibility features like focused state]
-
 ## Design Assets
 
 ### Figma Project
@@ -109,8 +106,8 @@ Complete UI/UX design available on Figma:
 ![Components](./readme/demoComponents.png)
 *Reusable components: the smallest elements and composite elements that are reused across the project*
 
-![Screens](./readme/screenshotScreens.png)
-[Default screens of the app that give the general idea]
+![Screens](./readme/demoScreens.png)
+*Overview of the default screens*
 
 ![Variants](./readme/screenshotVariants.png)
 [Screens that show different states of components and variations to the screens]
