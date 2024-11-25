@@ -10,7 +10,6 @@ This repository showcases a React-based application, including both implementati
 At the moment, only the mobile version is available.
 
 ![Main App Screenshot](./readme/cover.png)
-[Add a key screenshot that captures the essence of your application]
 
 ## Expectations from the app:
 - **The app should provide as much information as possible at once**
@@ -22,25 +21,32 @@ At the moment, only the mobile version is available.
 ## Design System & UI/UX Decisions
 
 ### User Experience Considerations
-- **Navigation Structure**: all navigation related to the teams' data is made via informational elements (like names of the teams) and tap zones are much bigger than corresponding icons; intuitivity is sacrificied for the screen real estate and cleanness; additional navigation is implemented as a bottom toolbar and is design to be easily used with fingers of one hand.
-- **Information Architecture**: [Describe how you organized content]
-- **Interaction Patterns**: the main navigation provides step-by-step interaction style (from a team to the specifics of the current sesstion to adding details about the session and its laps); access to all information and actions that are not directly related to teams are isolated to the toolbar; filling out the forms automatically brings the user to the previous screen; 
+- **Navigation**: 
+  - All navigation related to the teams' data is implemented via informational elements (like names of the teams), and tap zones are much bigger than corresponding icons; intuitivity is sacrificied for the screen real estate and cleanness; additional navigation is implemented as a bottom toolbar and is design to be easily used with fingers of one hand.
+  - The primary app navigation provides step-by-step interaction style: starting with the name of the race the user gradually accesses more and more detailed information until they reach the end where they can add new data via forms; access to all information and actions that are not directly related to teams are isolated to the toolbar; filling out the forms automatically brings the user to the previous screen.
+- **Content**: 
+  - Information related to the teams and the race is organised in tables that can be easily compared with each other; the main information is always visible on the screens most used during the race; headers display general information about the race and the team that is viewed at the moment.
 
 ## Technical Implementation
 
 ### Technology Stack
+- Typescript 5.2.2
 - React 18.2.0
 - Redux 9.1.2
-- [Other major libraries/frameworks used]
-- [Key technical choices]
+- SignalR & Redux middleware for SignalR (redux-signalr) 1.2.0
+- React Router for screen navigation, CSS Modules
+- Vite 5.2.0
 
 ### Project Structure
 ```
 src/
-├── components/         # React components
-├── hooks/             # Custom React hooks
-├── utils/             # Helper functions
-└── [other folders]    # Additional organization
+├── app/         # Store, hooks, SignalR Middleware
+├── compoenents/ # React components
+├── data/        # UI copy and icons
+├── features/    # Redux slices
+├── styles/      # CSS variables for the design tokens, common styles
+├── types/       # Data types
+└── utils/       # Helper functions
 ```
 
 ### Key Features
