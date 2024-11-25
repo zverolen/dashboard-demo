@@ -109,13 +109,13 @@ Complete UI/UX design available on Figma:
 ![Screens](./readme/demoScreens.png)
 *Overview of the default screens*
 
-![Variants](./readme/screenshotVariants.png)
-[Screens that show different states of components and variations to the screens]
+![Variants](./readme/demoVariants.png)
+*Screens that show different states of components and variations to the screens*
 
-![Design Tokens](./readme/screenshotDesignTokens.png)
-[Design tokens with several levels of abstractions are used to keep reusable and co-dependent units]
+![Design Tokens](./readme/demoDesignTokens.png)
+*Design tokens with several levels of abstractions are used to keep reusable and co-dependent units*
 
-![Design Approach](./readme/screenshotDesignApproach.png)
-[How design is handeled: underlying structure is implemented in the compoenents; for example, invisible tap zones around the elements that have smaller visual size]
+![Design Approach](./readme/demoDesignApproach.png)
+*How design is handeled: underlying structure is implemented in the compoenents; for example, invisible tap zones around the elements that have smaller visual size*
 
 
