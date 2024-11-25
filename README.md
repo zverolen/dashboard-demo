@@ -106,8 +106,8 @@ Complete UI/UX design available on Figma:
 - [Figma Project Link](https://www.figma.com/design/wXrteEcg8uDTsmtVstEKRm/Design?node-id=1-2&t=7gwSXWcHseae3ilt-1)
 
 ### Key Screens
-![Components](./readme/screenshotComponents.png)
-[Reusable components: the smallest elements and composite elements that are reused across the project]
+![Components](./readme/demoComponents.png)
+*Reusable components: the smallest elements and composite elements that are reused across the project*
 
 ![Screens](./readme/screenshotScreens.png)
 [Default screens of the app that give the general idea]
