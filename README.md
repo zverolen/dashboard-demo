@@ -2,7 +2,7 @@
 
 # Race Dashboard
 
-The Race Dashboard app helps in making strategic decisions during a race by providing necessary metrics. Developed and tested by go kart races.
+The Race Dashboard app helps in making strategic decisions during a race by providing necessary metrics. Developed and tested by go kart racers.
 
 This is a demonstration repository showcasing implementation of the front-end side of the project. The code is isolated and provided for viewing purposes.
 
@@ -11,15 +11,14 @@ At the moment, only the mobile version is available. See the [Figma project](#vi
 ![Main App Screenshot](./readme/cover.png)
 
 ## Expectations from the app:
-- **The app should provide as much information as possible at once**
+- **The app should simultaneously provide as much information as possible**
 - **The information should be easily scannable and suitable for quick evaluation and comparison**
 - **Different pieces of information should be easily distingushable**
 - **All visual noise should be reduces as much as possible, cognitive load and distractions should be kept to a minimum**
 - **All user tasks should be made with least effort possible**
 
-## Design System & UI/UX Decisions
+## User Experience Considerations
 
-### User Experience Considerations
 - **Navigation**: 
   - All navigation related to the teams' data is implemented via informational elements (like names of the teams), and tap zones are much bigger than corresponding icons; intuitivity is sacrificied for the screen real estate and cleanness; additional navigation is implemented as a bottom toolbar and is design to be easily used with fingers of one hand.
   - The primary app navigation provides step-by-step interaction style: starting with the name of the race the user gradually accesses more and more detailed information until they reach the end where they can add new data via forms; access to all information and actions that are not directly related to teams are isolated to the toolbar; filling out the forms automatically brings the user to the previous screen.
@@ -54,21 +53,30 @@ src/
 - Keeping track of pilots and cars for all teams.
 - Calculating parameters needed for the decisions during the race.
 
-## Viewing the Code
 
-This repository is for code review purposes. To explore the codebase, please, browse the source code directly on GitHub.
+## Accessibility Features
 
-## Contact
+Visual implementation doesn't consider a number of accessibility principle due to the specifics of the app and the main requirement to fit as much data as possible on a small screen. That said, the WCAG 2.2 guidance was was followed anywhere it was possible (for example, tap zone sizes). The app will benefit from following the technical accessibility principles like keyboard navigation and screen reader support especially for viewing the results of past races. Currently, this part is under developement.
 
-[Your Name]
-[Professional Links - GitHub, LinkedIn, etc.]
-[How to reach you for questions]
+- **HTML Semantics**
+  - Only native HTML elements are used (buttons, inputs, tables and other).
+  - Headings and other hierarchy is respected partly with the use of visually hidden elements.
 
-### Visual Design
-- **Color Palette**: the dark theme was chosen because it is traditional for such systems and is familiar to the user; also, it contributes to lowering the carbon impact. The pallette incorporates a number of different bright colors to highlight aspects of race data. All colors comply at least with the WCAG 2.2 Level AA.
+- **Keyboard Navigation**
+  - Under development.
+
+- **Screen Reader Optimization**
+  - Under development.
+
+- **Visual Accessibility**
+  - Color contrast ratios meet WCAG 2.2 criteria (minimum Level AA).
+  - Text scaling support.
+
+## Visual Design
+- **Color Palette**: the dark theme was chosen because it is traditional for such systems and is familiar to the user; it also contributes to lowering the carbon impact. The pallette includes a number of different bright colors to highlight aspects of race data. All colors comply with the WCAG 2.2 at least at the Level AA.
   - Text and background: light and dark shades of grey are used for text and background; true black is used as an alternative background color for elements differentiation.
   - Main accent colors: shades of purple; a less saturated variant is used for highlighting a team in the list and deviders; a more saturated color is used for controls.
-  - Additional accent colors: a number of colors with semantic and/or traditional meaning are used to communicate different signals to the user; they help to draw the attention, distinguish between numbers, show the level of success of teams.
+  - Additional accent colors: a number of colors with semantic and/or traditional meaning in the racing sport are used to communicate different signals to the user; they help to draw the attention, distinguish between numbers, show the level of success of teams.
 
 ![Color choices](./readme/demoColors.png)
 *Screenshot of the app or figma to showcast the colors*
@@ -82,21 +90,6 @@ This repository is for code review purposes. To explore the codebase, please, br
   - The screens consist of traditional elements;
   - Almost all information is organised in tables; even though there are no lines that form table cells, the pattern forces data in corresponding table cells to remain in strict rows - this is needed for quick scanning and comparison; this pattern is followed in all elements that represent the race data.
 
-### Accessibility Features
-
-Visual implementation doesn't consider a number of accessibility principle due to the specifics of the app and the main requirement to fit as much data as possible on a small screen. That said, the WCAG 2.2 guidance was was followed anywhere it was possible (for example, tap zones). The app will benefit from following the technical accessibility principles like keyboard navigation and screen reader support especially for viewing the results of past races. Currently, this part is under developement.
-
-- **Keyboard Navigation**
-  - Under development
-
-- **Screen Reader Optimization**
-  - Under development
-
-- **Visual Accessibility**
-  - Color contrast ratios meet WCAG 2.2 criteria (minimum Level AA)
-  - Text scaling support
-
-## Design Assets
 
 ### Figma Project
 Complete UI/UX design available on Figma:
@@ -118,4 +111,13 @@ Complete UI/UX design available on Figma:
 ![Design Approach](./readme/demoDesignApproach.png)
 *How design is handeled: underlying structure is implemented in the compoenents; for example, invisible tap zones around the elements that have smaller visual size*
 
+## Viewing the Code
 
+This repository is for code review purposes. To explore the codebase, please, browse the source code directly on GitHub.
+
+## Contact
+
+Elena Zvereva
+Beograd, Serbia
+[LinkedIn](https://www.linkedin.com/in/elena-zvereva-722b3177/)
+[Telegram](https://t.me/zverolen)
