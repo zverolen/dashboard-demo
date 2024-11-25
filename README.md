@@ -6,16 +6,16 @@ The Race Dashboard app helps in making strategic decisions during a race by prov
 
 This is a demonstration repository showcasing implementation of the front-end side of the project. The code is isolated and provided for viewing purposes.
 
-At the moment, only the mobile version is available. See the [Figma project](#design) for complete UI/UX design details.
+At the moment, only the mobile version is available. See the [Figma project](#visual-design) for complete UI/UX design details.
 
 ![Main App Screenshot](./readme/cover.png)
 
 ## Expectations from the app:
 - **The app should provide as much information as possible at once**
-- **the information should be easily scannable and suitable for quick evaluation and comparison**
-- **different pieces of information should be easily distingushable**
-- **all visual noise should be reduces as much as possible, cognitive load and distractions should be kept to a minimum**
-- **all user tasks should be made with least effort possible**
+- **The information should be easily scannable and suitable for quick evaluation and comparison**
+- **Different pieces of information should be easily distingushable**
+- **All visual noise should be reduces as much as possible, cognitive load and distractions should be kept to a minimum**
+- **All user tasks should be made with least effort possible**
 
 ## Design System & UI/UX Decisions
 
@@ -64,7 +64,7 @@ This repository is for code review purposes. To explore the codebase, please, br
 [Professional Links - GitHub, LinkedIn, etc.]
 [How to reach you for questions]
 
-### Visual Design {#design}
+### Visual Design
 - **Color Palette**: the dark theme was chosen because it is traditional for such systems and is familiar to the user; also, it contributes to lowering the carbon impact. The pallette incorporates a number of different bright colors to highlight aspects of race data. All colors comply at least with the WCAG 2.2 Level AA.
   - Text and background: light and dark shades of grey are used for text and background; true black is used as an alternative background color for elements differentiation.
   - Main accent colors: shades of purple; a less saturated variant is used for highlighting a team in the list and deviders; a more saturated color is used for controls.
