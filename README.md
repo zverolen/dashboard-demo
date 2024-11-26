@@ -8,7 +8,7 @@ This is a demonstration repository showcasing the implementation of the front-en
 
 At the moment, only the mobile version is available. See the [Design Section](#visual-design) for complete UI/UX design details.
 
-![Main App Screenshot](./readme/cover2.png)
+![Main App Screenshot](./readme/cover.png)
 
 ## Key Features
 
@@ -79,7 +79,7 @@ Visual implementation doesn't consider a number of accessibility principles due 
 - **Main accent colors**: Shades of purple; A less saturated variant is used for highlighting a team in the list and dividers; A more saturated color is used for controls.
 - **Additional accent colors**: A number of colors with semantic and/or traditional meaning in the racing sport are used to communicate different signals to the user; They help to draw the attention, distinguish between numbers, show the level of success of teams.
 
-![Color choices](./readme/demoColors2.png)
+![Color choices](./readme/demoColors.png)
 *Screenshot of the app or figma to showcast the colors*
 
 - **Typography**
@@ -96,19 +96,19 @@ Visual implementation doesn't consider a number of accessibility principles due 
 Complete UI/UX design available on [Figma](https://www.figma.com/design/wXrteEcg8uDTsmtVstEKRm/Design?node-id=1-2&t=7gwSXWcHseae3ilt-1)
 
 ### Key Screens
-![Components](./readme/demoComponents2.png)
+![Components](./readme/demoComponents.png)
 *Reusable components: the smallest elements and composite elements that are reused across the project*
 
-![Screens](./readme/demoScreens2.png)
+![Screens](./readme/demoScreens.png)
 *Overview of the default screens*
 
-![Variants](./readme/demoVariants2.png)
+![Variants](./readme/demoVariants.png)
 *Screens that show different states of components and variations to the screens*
 
-![Design Tokens](./readme/demoDesignTokens2.png)
+![Design Tokens](./readme/demoDesignTokens.png)
 *Design tokens with several levels of abstractions are used to keep reusable and co-dependent units*
 
-![Design Approach](./readme/demoDesignApproach2.png)
+![Design Approach](./readme/demoDesignApproach.png)
 *How design is handeled: underlying structure is implemented in the compoenents; for example, invisible tap zones around the elements that have smaller visual size*
 
 ## Viewing the Code
