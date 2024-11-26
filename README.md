@@ -10,18 +10,20 @@ At the moment, only the mobile version is available. See the [Design Section](#v
 
 ![Main App Screenshot](./readme/cover.png)
 
-### Key Features
+## Key Features
+
 - Real-time race and teams data update: team position, time of the current race session, best lap time, interval before the leader of the race and other metrics.
 - Customization of the race parameters. 
 - Keeping track of pilots and cars for all teams.
 - Calculating parameters needed for the decision making during the race.
 
 ## Expectations from the app:
-- **Each screen contains as much information as possible.**
-- **The data is easily scannable and suitable for quick evaluation and comparison.**
-- **Different pieces of information should be easily distinguishable.**
-- **All visual noise should be reduced; cognitive load and distractions should be kept to a minimum.**
-- **All user tasks should be made with the least effort possible.**
+
+- Each screen contains as much information as possible.
+- The data is easily scannable and suitable for quick evaluation and comparison.
+- Different pieces of information should be easily distinguishable.
+- All visual noise should be reduced; cognitive load and distractions should be kept to a minimum.
+- All user tasks should be made with the least effort possible.
 
 ## User Experience Considerations
 
