@@ -93,7 +93,7 @@ Visual implementation doesn't consider a number of accessibility principles due 
 
 
 ### Figma Project
-Complete UI/UX design available on Figma: [figma Project Link](https://www.figma.com/design/wXrteEcg8uDTsmtVstEKRm/Design?node-id=1-2&t=7gwSXWcHseae3ilt-1)
+Complete UI/UX design available on [Figma](https://www.figma.com/design/wXrteEcg8uDTsmtVstEKRm/Design?node-id=1-2&t=7gwSXWcHseae3ilt-1)
 
 ### Key Screens
 ![Components](./readme/demoComponents.png)
