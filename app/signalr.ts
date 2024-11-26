@@ -11,11 +11,10 @@ import { refreshTime } from '../features/time/timeSlice'
 import { RacesListType, SessionsListType, FullRaceType, RaceProfileSliceState, FullRaceStatsType } from '../types/types'
 import { setRaceProfile } from '../features/raceProfile/raceProfileSlice'
 import { setRaceStats } from '../features/raceStats/raceStatsSlice'
-//https://api.eqlty.io/RacesHub
 
 export const connection = new HubConnectionBuilder()
 //Changed
-  .withUrl('https://dev.api.io', {
+  .withUrl('https://dev.api', {
     transport: HttpTransportType.WebSockets,
   })
   .withAutomaticReconnect()
